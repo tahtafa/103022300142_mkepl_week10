@@ -28,5 +28,6 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      # Parameter --file akan mencari pom.xml di lokasi spesifik ini
-      run: mvn -B package --file Basic-Java-Maven-SCD/Basic-Java-Maven-mkepl_week10/pom.xml
+      # Menggunakan tanda kutip untuk menangani spasi atau karakter unik di nama folder
+      run: mvn -B package --file pom.xml
+      working-directory: "Basic-Java-Maven-SCD/Basic-Java-Maven-mkepl_week10"
